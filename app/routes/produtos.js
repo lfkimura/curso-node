@@ -2,11 +2,15 @@ var produtos = function (app){
 
 app.get('/produtos', function(req,res){
 	var connection = app.infra.connectionFactory();
-	var produtosBanco = app.infra.produtoBanco(connection);
+	var produtosBanco = new app.infra.ProdutoDAO(connection);
 	produtosBanco.lista( function(err,results){
 		res.render('produtos/lista', { lista: results});
 	});
 	connection.end();
+	});
+app.get('/produtos/form', function (req,res){
+	console.log('cheguei aqui');
+	res.render('produtos/form');
 	});
 }
 
