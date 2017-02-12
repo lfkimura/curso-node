@@ -11,7 +11,19 @@
   "dependencies": {
     "ejs": "^2.5.2",
     "expres": "0.0.5",
-    "express": "^4.14.0",
+    "express": "^4.14.1",
     "mysql": "^2.12.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfkimura/curso-node.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/lfkimura/curso-node/issues"
+  },
+  "homepage": "https://github.com/lfkimura/curso-node#readme"
 }
